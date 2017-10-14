@@ -33,7 +33,7 @@ class Artist
   end
 
   def self.create(name)
-     new_artist = self.new(name) 
+     new_artist = self.new(name)
      new_artist.map {|artist| artist.save}
    end
 
