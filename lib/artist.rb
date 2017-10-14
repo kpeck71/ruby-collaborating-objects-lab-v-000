@@ -34,8 +34,7 @@ class Artist
 
   def self.create(name)
      new_artist = self.new(name)
-     new_artist.map {|artist| artist.save}
-     new_artist
+     new_artist.save
    end
 
   def self.find_or_create_by_name(name)
