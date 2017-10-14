@@ -13,7 +13,7 @@ class MP3Importer
   end
 
   def import(path)
-    filename = path.collect {|f| f}
+    filename = @files
     Song.new_by_filename(filename)
   end
 
