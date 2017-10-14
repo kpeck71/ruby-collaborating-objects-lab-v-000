@@ -41,7 +41,7 @@ class Artist
   end
 
   def print_songs
-    @songs.collect {|s| s.name}
+    @songs.each {|s| s.name}
   end
 
 end
