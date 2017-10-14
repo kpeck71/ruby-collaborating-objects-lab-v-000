@@ -33,6 +33,7 @@ class Artist
   end
 
   def self.create(name)
+    if @@all.include?(self)
     self.new(name)
   end
 
