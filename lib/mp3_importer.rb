@@ -13,8 +13,7 @@ class MP3Importer
   end
 
   def import(path)
-    filename = @files
-    Song.new_by_filename(filename)
+    @files.each{|f| Song.new_by_filename(f)}
   end
 
 # You should write code that responds to MP3Importer.new('./db/mp3s').import. Google around for how to get a list of files in a directory! Make sure you only get .mp3 files.
