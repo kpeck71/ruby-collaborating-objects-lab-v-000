@@ -28,6 +28,11 @@ class Artist
     @@all << self
   end
 
+  def self.find
+  end
+
+  def self.create
+    
   def self.find_or_create_by_name
     if @@all.include?(self)
       self
