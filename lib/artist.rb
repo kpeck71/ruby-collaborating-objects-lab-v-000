@@ -33,7 +33,7 @@ class Artist
   end
 
   def self.create
-
+    self.new
   end
   def self.find_or_create_by_name
     self.find(name) || self.create(name)
