@@ -28,7 +28,8 @@ class Artist
     @@all << self
   end
 
-  def self.find
+  def self.find(name)
+    @@all.include?(self)
   end
 
   def self.create
