@@ -36,13 +36,9 @@ class Artist
      self.new(name).tap {|artist| artist.save}
    end
 
-  def self.find_or_create_by_name(name)
-    if self.find(name)
-      self
-    else
-      self.create(name)
+   def self.find_or_create_by_name(name)
+      self.find(name) ? self.find(name) : self.create(name)
     end
-  end
 
   def print_songs
     @songs.collect {|s| s.name}
