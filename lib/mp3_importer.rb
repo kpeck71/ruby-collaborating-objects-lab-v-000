@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir["./db/mp3s/"]
+    @files = Dir.glob["./db/mp3s/"]
     #files.collect {|f| f.sub(/db\/mp3s\//)}
   end
 
