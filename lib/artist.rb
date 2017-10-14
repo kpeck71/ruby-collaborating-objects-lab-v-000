@@ -34,7 +34,7 @@ class Artist
 
   def self.create(name)
     if @@all.include?(self) == false
-    self.new(name)
+      @all << self.new(name)
   end
 
   def self.find_or_create_by_name(name)
